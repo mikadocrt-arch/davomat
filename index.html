@@ -3,17 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Page Title</title>
+    <title>Attendance System</title>
+    <script src="https://www.gstatic.com/firebasejs/9.1.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.1.0/firebase-database.js"></script>
     <link rel="stylesheet" href="styles.css">
-    <!-- Firebase SDK -->
-    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-analytics.js"></script>
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome to My Page</h1>
-        <p>This is a sample paragraph.</p>
-    </div>
+    <header>
+        <h1>Firebase Real-Time Attendance System</h1>
+    </header>
+    <main>
+        <section id="attendance">
+            <h2>Attendance</h2>
+            <div id="attendance-list"></div>
+            <button id="mark-attendance">Mark Attendance</button>
+        </section>
+    </main>
     <script src="app.js"></script>
 </body>
 </html>
